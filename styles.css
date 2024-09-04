@@ -1,0 +1,438 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+
+body {
+    font-family: "Moderustic", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+    box-sizing: border-box; /* Añadido */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px; /* Reducido */
+    background-color: #2C2F53;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box; /* Añadido */
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.navbar .highlight {
+    color: #00C8E9;
+}
+
+.navbar .menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 90px;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #00C8E9;
+}
+.hero-section {
+    position: relative;
+    height: 130vh; /* Mantén la altura al 100% de la ventana */
+    background-image: url('./assets/Aire-acondicionado2.avif');
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+    text-align: center;
+    padding-top: 75px; /* Ajusta este valor para desplazar el contenido hacia abajo */
+    box-sizing: border-box;
+}
+
+
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+    .button {
+    display: flex;
+    align-items: center;
+    background-color: #00C8E9; /* Cambia el color de fondo si es necesario */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-flex; /* Cambia el display a inline-flex */
+    font-size: 1em; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+.button svg {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    vertical-align: middle; /* Alineación vertical */
+}
+
+.button span {
+    vertical-align: middle; /* Alineación vertical del texto */
+}
+
+
+.contact {
+    font-size: 1.2em;
+    margin-top: 30px;
+    color: #1a5276;
+    font-weight: bold;
+    background-color: rgba(240, 240, 240, 0.6);
+    padding: 10px 20px; /* Adds some padding around the text */
+    border-radius: 5px; /* Adds slightly rounded corners */
+    text-align: center; /* Centers the text inside the box */
+}
+
+
+/* Info Section */
+.info-section {
+    background-color: #F7F9FB;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.info-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-title h2 {
+    margin: 0 10px;
+    font-size: 1.8em;
+    color: #2C2F53;
+}
+
+.info-icon {
+    font-size: 2.5em;
+    color: #00C8E9;
+}
+
+.info-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.info-button {
+    background-color: #00C8E9;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.info-button:hover {
+    background-color: #007B99;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.item .text,
+.item .image {
+    flex: 1;
+    padding: 10px;
+}
+
+.item .text {
+    text-align: left;
+    color: black;
+}
+.item .text h2 {
+color: black;
+font-size: 30px;
+margin: 40px;
+text-align:center;
+}
+
+.item .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item.reversed {
+    flex-direction: reverse;
+}
+
+.text button {
+  background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 70px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del elemento padre */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item.reversed {
+        flex-direction: column;
+    }
+}
+
+.cta-section {
+    position: relative;
+    height: 50vh; /* Adjust height as needed */
+    background-image: url('./assets/Aire-solo.avif'); /* Use the correct path for your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 40px; /* Add margin if needed */
+}
+
+.cta-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.cta-section .content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #00C8E9;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #007B99;
+}
+
+
+.brands-section {
+    text-align: center;
+    margin-top: 40px; /* Add some space above the section if needed */
+}
+
+.brands-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Space between heading and image */
+    color: #333; /* Adjust color as needed */
+}
+
+.brands-section img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+    height: auto;
+    display: inline-block; /* Ensures proper centering */
+}
+
+.footer {
+    background-color: #2C2F53; /* Color de fondo del footer */
+    color: #ffffff; /* Color del texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espaciado dentro del footer */
+    font-size: 1em; /* Tamaño de la fuente */
+    position: relative; /* Para futuras personalizaciones */
+    bottom: 0;
+    width: 100%;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color verde de WhatsApp (puedes eliminar si usas una imagen) */
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+}
+
+.whatsapp-button img {
+    width: 60px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 60px; /* Ajusta el tamaño de la imagen según sea necesario */
+    border-radius: 50%; /* Asegura que la imagen tenga bordes redondeados si es necesario */
+}
+
+.whatsapp-button:hover {
+    opacity: 0.8; /* Cambia la opacidad cuando se pasa el ratón */
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #2C2F53;
+        display: none;
+        margin-left: 0;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+    .hero-section {
+        padding: 0 15px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+
+    .button {
+        padding: 10px 18px;
+    }
+
+    .info-button {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+}
